@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Latitude and Weather</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 
 <body>
 <div id="summary">
-<h1>Summary: Latitude vs. Weather</h1>
+<h1 class="header-text">Summary: Latitude vs. Weather</h1>
 <hr>
 
-<h2>Project Purpose</h2>
+<h2 class="header-text">Project Purpose</h2>
 <p>The purpose of this project was to analyze how weather changes as one gets closer to the equator (<b>Latitude = 0</b>). The aim was to analyze (4) common components of weather:</p>
 <ul>
     <li>Maximum Temperature (Fahrenheit)</li>
@@ -19,35 +20,35 @@
     <li>Wind Speed (mph)</li>
 </ul> 
 <hr>
-<h2>Project Methodology</h2>
+<h2 class="header-text">Project Methodology</h2>
 <p>To accomplish the project goal, we performed the following main tasks:</p>
 <ol>
     <li>Pulled data from <b>OpenWeatherMap API</b> to assemble a dataset of over 500 cities</li>
-    <li>Used <b>Matplotlib</b> to plot the components of weather vs. the lattitude</li>
+    <li>Used <b>Matplotlib</b> library to plot the components of weather vs. the latitude</li>
 </ol>
 <p>This site provides the source data, visualizations and analysis for weather conditions. </p>
 <br>
 <br>
 </div>
 <div id="visualizations">
-<h1>Visualizations</h1>
-<a href=#>
+<h1 class="header-text">Visualizations</h1>
+<a class="landing-graphs" href="max_temp_graph.html">
     <img target="_blank" alt="lat_vs_temp" src="assets\images\latitude_temperature_scatter.png"
     width="250" height="200"></a>
-<a href=#>
+<a class="landing-graphs" href="humidity_graph.html">
     <img target="_blank" alt="lat_vs_humidity" src="assets\images\latitude_humidity_scatter.png"
     width="250" height="200"></a> 
-<a href=#>
+<a class="landing-graphs" href="cloudiness_graph.html">
     <img target="_blank" alt="lat_vs_cloudiness" src="assets\images\latitude_cloudiness_scatter.png"
     width="250" height="200"></a>  
-<a href=#>
+<a class="landing-graphs" href="windspeed_graph.html">
     <img target="_blank" alt="lat_vs_wind" src="assets\images\latitude_windspeed_scatter.png"
     width="250" height="200"></a> 
-<a href=#>
-    <img target="_blank" alt="NH_vs_temp_regression" src="assets\images\NH_latitude_temperature_regression.png"
+<a class="landing-graphs" href="NH_temp_regression.html">
+    <img target="_blank" alt="NH_temp_regression" src="assets\images\NH_latitude_temperature_regression.png"
     width="250" height="200"></a> 
-<a href=#>
-    <img target="_blank" alt="SH_vs_temp_regression" src="assets\images\SH_latitude_temperature_regression.png"
+<a class="landing-graphs" href=SH_temp_regression.html>
+    <img target="_blank" alt="SH_temp_regression" src="assets\images\SH_latitude_temperature_regression.png"
     width="290" height="200"></a> 
 </div>  
 </body>
