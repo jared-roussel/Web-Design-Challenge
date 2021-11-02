@@ -7,6 +7,41 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Comparison</a>
+          </li>
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="max_temp_graph.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity_graph.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness_graph.html">Cloudiness</a>
+              <a class="dropdown-item" href="windspeed_graph.html">Wind Speed</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="NH_temp_regression.html">Northern Hemisphere</a>
+              <a class="dropdown-item" href="SH_temp_regression.html">Southern Hemisphere</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <img alt="SH_temp_regression" src="assets\images\SH_latitude_temperature_regression.png"
     width="550" height="500">
 </body>
