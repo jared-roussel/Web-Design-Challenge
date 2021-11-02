@@ -2,35 +2,66 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
+  <style> </style>
   <title>Latitude and Weather</title>
-  <link rel="stylesheet" href="bootstrap.min.css">
-</head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> 
+  </head>
 
 <body>
-<div id="summary">
-<h1 class="header-text">Summary: Latitude vs. Weather</h1>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#profile">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+      </ul>
+      </div>
+<div class="row">
+    <div class="col-sm-12 col-md-8" id="summary">
+        <h1 class="header-text">Summary: Latitude vs. Weather</h1>
 <hr>
 
-<h2 class="header-text">Project Purpose</h2>
-<p>The purpose of this project was to analyze how weather changes as one gets closer to the equator (<b>Latitude = 0</b>). The aim was to analyze (4) common components of weather:</p>
-<ul>
-    <li>Maximum Temperature (Fahrenheit)</li>
-    <li>Cloudiness (%)</li>
-    <li>Humidity (%)</li>
-    <li>Wind Speed (mph)</li>
-</ul> 
-<hr>
-<h2 class="header-text">Project Methodology</h2>
-<p>To accomplish the project goal, we performed the following main tasks:</p>
-<ol>
-    <li>Pulled data from <b>OpenWeatherMap API</b> to assemble a dataset of over 500 cities</li>
-    <li>Used <b>Matplotlib</b> library to plot the components of weather vs. the latitude</li>
-</ol>
-<p>This site provides the source data, visualizations and analysis for weather conditions. </p>
+<div class="card text-white bg-primary mb-3">
+    <div class="card-header"><h2>Project Purpose</h2></div>
+    <div class="card-body">
+      <p class="card-text">The purpose of this project was to analyze how weather changes as one gets closer to the equator (<b>Latitude = 0</b>). The aim was to analyze (4) common components of weather:</p>
+      <ul>
+          <li>Maximum Temperature (Fahrenheit)</li>
+          <li>Cloudiness (%)</li>
+          <li>Humidity (%)</li>
+          <li>Wind Speed (mph)</li>
+      </ul></p>
+    </div>
+  </div>
+  <div class="card text-white bg-secondary mb-3"">
+    <div class="card-header"><h2>Project Methodology</h2></div>
+    <div class="card-body">
+      <p class="card-text">To accomplish the project goal, we performed the following main tasks:</p>
+      <ol>
+          <li>Pulled data from <b>OpenWeatherMap API</b> to assemble a dataset of over 500 cities</li>
+          <li>Used <b>Matplotlib</b> library to plot the components of weather vs. the latitude</li>
+      </ol>
+      <p>This site provides the source data, visualizations and analysis for weather conditions.</p>
+    </div>
+  </div>
 <br>
 <br>
 </div>
-<div id="visualizations">
+<div class="col-sm-12 col-md-4" id="visualizations">
 <h1 class="header-text">Visualizations</h1>
 <a class="landing-graphs" href="max_temp_graph.html">
     <img target="_blank" alt="lat_vs_temp" src="assets\images\latitude_temperature_scatter.png"
@@ -51,4 +82,5 @@
     <img target="_blank" alt="SH_temp_regression" src="assets\images\SH_latitude_temperature_regression.png"
     width="290" height="200"></a> 
 </div>  
+</div>
 </body>
