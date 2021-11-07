@@ -17,7 +17,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="main.html">Latitude and Weather</a>
+      <a class="navbar-brand" href="index.html">Latitude and Weather</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -48,6 +48,31 @@
       </div>
     </div>
   </nav>
+  <h1>Humidity</h1>
+  <div>
   <img alt="lat_vs_humidity" src="assets\images\latitude_humidity_scatter.png"
     width="550" height="500">
+    <p>Humidity levels follow an inverse U-shape; peaking at the equator (latitude = 0) but falling for values below the equator and above.</p>
+  </div>
+    <div class="col-sm-12 col-md-4" id="visualizations">
+      <h1 class="header-text">Visualizations</h1>
+      <a class="landing-graphs" href="max_temp_graph.html">
+          <img target="_blank" alt="lat_vs_temp" src="assets\images\latitude_temperature_scatter.png"
+          width="250" height="200"></a>
+      <a class="landing-graphs" href="humidity_graph.html">
+          <img target="_blank" alt="lat_vs_humidity" src="assets\images\latitude_humidity_scatter.png"
+          width="250" height="200"></a> 
+      <a class="landing-graphs" href="cloudiness_graph.html">
+          <img target="_blank" alt="lat_vs_cloudiness" src="assets\images\latitude_cloudiness_scatter.png"
+          width="250" height="200"></a>  
+      <a class="landing-graphs" href="windspeed_graph.html">
+          <img target="_blank" alt="lat_vs_wind" src="assets\images\latitude_windspeed_scatter.png"
+          width="250" height="200"></a> 
+      <a class="landing-graphs" href="NH_temp_regression.html">
+          <img target="_blank" alt="NH_temp_regression" src="assets\images\NH_latitude_temperature_regression.png"
+          width="250" height="200"></a> 
+      <a class="landing-graphs" href=SH_temp_regression.html>
+          <img target="_blank" alt="SH_temp_regression" src="assets\images\SH_latitude_temperature_regression.png"
+          width="290" height="200"></a> 
+      </div>  
 </body>
